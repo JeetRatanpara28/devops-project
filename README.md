@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# 🚀 DevOps Project - Containerized React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![CI/CD Pipeline](https://github.com/JeetRatanpara28/devops-project/actions/workflows/ci-cd.yml/badge.svg)
 
-## Available Scripts
+A full-stack DevOps demonstration project featuring React frontend with Docker containerization and automated CI/CD pipeline.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- ⚛️ React 18 frontend application
+- 🐳 Docker containerization with multi-stage builds
+- ⚙️ **Automated CI/CD pipeline with GitHub Actions**
+- 🧪 **Automated testing on every push**
+- 🌐 Nginx web server for production
+- 📦 Optimized production build
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔄 CI/CD Pipeline
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project includes an automated CI/CD pipeline that:
+- ✅ Runs tests on every push
+- ✅ Builds the application
+- ✅ Creates Docker image
+- ✅ Tests the Docker container
+- ✅ Provides build status
 
-### `npm test`
+### Pipeline Jobs:
+1. **Build & Test** - Install dependencies, run tests, build app
+2. **Docker Build** - Build and test Docker image
+3. **Code Quality** - Check code quality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies
 
-### `npm run build`
+- **Frontend:** React, JavaScript, CSS
+- **Containerization:** Docker, Docker Compose
+- **CI/CD:** GitHub Actions
+- **Web Server:** Nginx
+- **Version Control:** Git, GitHub
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Quick Start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run Locally
+```bash
+npm install
+npm start
+# Visit http://localhost:3000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run with Docker
+```bash
+# Build image
+docker build -t devops-app .
 
-### `npm run eject`
+# Run container
+docker run -d -p 8080:80 --name devops-app devops-app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Visit http://localhost:8080
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Using Docker Compose
+```bash
+docker-compose up -d
+# Visit http://localhost:8080
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Project Structure
+```
+devops-project/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml        # CI/CD Pipeline
+├── public/                  # Static files
+├── src/                     # React source code
+├── Dockerfile               # Docker build configuration
+├── docker-compose.yml       # Docker Compose setup
+├── package.json             # Dependencies
+└── README.md               # Documentation
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎯 DevOps Practices
 
-## Learn More
+✅ **Version Control** - Git workflow with GitHub  
+✅ **Containerization** - Docker multi-stage builds  
+✅ **CI/CD Pipeline** - Automated testing and building  
+✅ **Automated Testing** - Tests run on every commit  
+✅ **Production Ready** - Optimized Nginx deployment  
+✅ **Infrastructure as Code** - Dockerfile & docker-compose.yml  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔄 Workflow
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Developer pushes code to GitHub
+2. GitHub Actions automatically triggers
+3. Pipeline runs tests
+4. Pipeline builds application
+5. Pipeline creates Docker image
+6. Pipeline tests the container
+7. All status visible in GitHub Actions tab
 
-### Code Splitting
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Jeet Ratanpara**
+- GitHub: [@JeetRatanpara28](https://github.com/JeetRatanpara28)
 
-### Analyzing the Bundle Size
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MIT License - feel free to use this project for learning!
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Built with ❤️ using React, Docker, and GitHub Actions**
