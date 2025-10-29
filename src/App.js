@@ -9,7 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <spam>DevOps Project with CI/CD Pipeline! 🚀</spam>
+        <p>DevOps Project with CI/CD Pipeline! 🚀</p>
 <a
           className="App-link"
           href="https://reactjs.org"
