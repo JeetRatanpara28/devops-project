@@ -106,3 +106,11 @@ MIT License - feel free to use this project for learning!
 ---
 
 **Built with ❤️ using React, Docker, and GitHub Actions**
+
+## 🌐 Live Demo
+
+**Live Site:** https://devops-project-mbxv990la-jeets-projects-7aaae00e.vercel.app
+
+Deployed on Vercel with automatic deployments from GitHub!
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JeetRatanpara28/devops-project)
