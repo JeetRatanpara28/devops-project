@@ -6,17 +6,22 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <h1 style={{color: 'yellow', fontSize: '3em'}}>
+          UPDATED VERSION - IT WORKS!
+        </h1>
+        <p style={{color: 'lime', fontSize: '1.5em'}}>
+          Auto-deployment is working!
         </p>
-        <p>DevOps Project with CI/CD Pipeline! </p>
-        <a
+        <p style={{color: 'cyan'}}>
+          GitHub + Vercel + CI/CD = Success!
+        </p>
+        
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/JeetRatanpara28/devops-project"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          View on GitHub
         </a>
       </header>
     </div>
